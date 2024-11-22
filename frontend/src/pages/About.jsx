@@ -28,11 +28,11 @@ const About = () => {
         </div>
       </div>
       <div className="text-xl py-4">
-        <Title text1={'OUR'} text2={'TEAM'}/>
+        <Title text1={'OUR'} text2={'SERVICES'}/>
       </div>
       <div className="flex flex-col md:flex-row text-sm mb-20">
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Quality Assurance:</b>
+          <b>Ram Upgrade:</b>
           <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nulla iste impedit iure reiciendis sapiente quibusdam quae qui 
             perspiciatis! Cumque, deleniti. Optio, quas vel eius totam enim 
@@ -40,7 +40,7 @@ const About = () => {
           </p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Convenience:</b>
+          <b>Cleaning:</b>
           <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nulla iste impedit iure reiciendis sapiente quibusdam quae qui 
             perspiciatis! Cumque, deleniti. Optio, quas vel eius totam enim 
@@ -48,7 +48,7 @@ const About = () => {
           </p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
-          <b>Exceptional Customer Service:</b>
+          <b>LCD Change:</b>
           <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nulla iste impedit iure reiciendis sapiente quibusdam quae qui 
             perspiciatis! Cumque, deleniti. Optio, quas vel eius totam enim 

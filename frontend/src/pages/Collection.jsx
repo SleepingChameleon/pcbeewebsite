@@ -12,7 +12,7 @@ const Collection = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]); 
   const [category, setCategory] = useState([]);
-  const [subCategory, setSubCategory] = useState([]);
+  const [subCategory] = useState([]);
   const [sortType, setSortType] = useState('relevant');
 
   const toggleCategory = (e) => {
@@ -24,14 +24,6 @@ const Collection = () => {
     }
   }
 
-  const toggleSubCategory = (e) => {
-    if (subCategory.includes(e.target.value)) {
-      setSubCategory(prev => prev.filter((item) => item !== e.target.value));
-    }
-    else {
-      setSubCategory(prev => [...prev, e.target.value]);
-    }
-  }
 
   const applyFilter = () => {
 
@@ -112,29 +104,6 @@ const Collection = () => {
           </div>
         </div>
         {/* SubCategory Filter */}
-        <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? "" : "hidden"} sm:block`}>
-          <p className="mb-3 text-sm font-medium">TYPE</p>
-          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'Laptop'} onChange={toggleSubCategory} /> Laptop
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'GPU'} onChange={toggleSubCategory}/> GPU
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'LCD'} onChange={toggleSubCategory}/> LCD
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'RAM'} onChange={toggleSubCategory}/> RAM
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'SSD'} onChange={toggleSubCategory}/> SSD
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={'Mouse'} onChange={toggleSubCategory}/> Mouse
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* Right Side */}
